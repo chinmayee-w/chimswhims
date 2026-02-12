@@ -100,6 +100,13 @@
       animation-delay: 2.1s;
     }
 
+    .scrap-link {
+      position: absolute;
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
     @keyframes page-fly {
       0% { transform: translate(-260px, -120px) rotateY(40deg) rotateZ(-12deg) scale(0.25); opacity:0; }
       60% { opacity:1; }
@@ -204,10 +211,16 @@
     </svg>
   </div>
 
-  <!-- PAGES -->
-  <div class="scrap s1"><img src="https://picsum.photos/300/200?random=1" /></div>
-  <div class="scrap s2"><img src="https://picsum.photos/300/200?random=2" /></div>
-  <div class="scrap s3"><img src="https://picsum.photos/300/200?random=3" /></div>
+  <!-- PAGES (CLICKABLE) -->
+  <a class="scrap-link s1" href="https://example.com/travel" target="_blank" rel="noopener noreferrer">
+    <div class="scrap"><img src="https://picsum.photos/300/200?random=1" alt="travel" /></div>
+  </a>
+  <a class="scrap-link s2" href="https://example.com/systems" target="_blank" rel="noopener noreferrer">
+    <div class="scrap"><img src="https://picsum.photos/300/200?random=2" alt="systems" /></div>
+  </a>
+  <a class="scrap-link s3" href="https://example.com/curiosities" target="_blank" rel="noopener noreferrer">
+    <div class="scrap"><img src="https://picsum.photos/300/200?random=3" alt="curiosities" /></div>
+  </a>
 
   <!-- FLOATING LEAVES -->
   <script>
